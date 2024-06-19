@@ -1,5 +1,5 @@
 server:
-  port: 9004
+  port: 0
 
 spring:
   jpa:
@@ -12,3 +12,9 @@ spring:
     url: jdbc:mysql://localhost:3306/BookingDB
     username: root
     password:
+  application:
+    name: booking-microservice
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}
