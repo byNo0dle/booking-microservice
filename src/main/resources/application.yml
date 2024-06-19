@@ -11,4 +11,4 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/BookingDB
     username: ${BD_USER}
-    password: ${BD_PASSWORD}
+    password:
